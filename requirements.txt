@@ -1,16 +1,14 @@
-# Core app
-streamlit==1.37.1
+# Core app + UI
+streamlit>=1.36,<1.40
+plotly>=5.20,<6
 
-# Data + math
-pandas==2.2.2
-numpy==1.26.4
-scikit-learn==1.5.1
+# Data & math
+pandas>=2.2,<3.0
+numpy>=1.26,<3.0
+scikit-learn>=1.4,<2.0
 
-# Deep learning
-torch==2.3.1
+# Excel support (reading .xlsx training file)
+openpyxl>=3.1,<4.0
 
-# Plots
-plotly==5.24.0
-
-# Excel reader for .xlsx
-openpyxl==3.1.5
+# Deep learning (CPU build; works on Streamlit Cloud and most servers)
+torch>=2.2,<2.6
